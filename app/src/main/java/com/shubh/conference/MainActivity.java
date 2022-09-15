@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 int id = item.getItemId();
                 item.setChecked(true);
                 drawerLayout.closeDrawer(GravityCompat.START);
+                Fragment fragment=null;
                 switch (id) {
                     case R.id.navhome:
                         replacefragment(new HomeFragment());
@@ -60,11 +61,9 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.navcontact:
                         replacefragment(new ContactFragment());
                         break;
-                    case R.id.navdate:
-                        replacefragment(new DateFragment());
-                        break;
                     default:
-                        return true;
+                        replacefragment(new HomeFragment());
+                        break;
 
                 }
                 return true;

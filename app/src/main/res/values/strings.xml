@@ -2,4 +2,7 @@
     <string name="app_name">conference</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="col1">Final Date</string>
+    <string name="hyperlink"><a href="https://www.iitism.ac.in/index.php/Departments/dept_chem"> Department of Chemical Engineering\nIndian Institute of Technology(ISM) Dhanbad </a>
+    </string>
 </resources>

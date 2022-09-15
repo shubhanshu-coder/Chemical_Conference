@@ -9,4 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="lightgrey">#989797</color>
     <color name="underline">#D8D6D6</color>
+    <color name="bgcolor">#F5F8F0</color>
+    <color name="linkc">#478ac9</color>
+    <color name="headerbg">#1E8F78</color>
+    <color name="buttoncolor">#f1c50e</color>
+    <color name="sec">#277BC0</color>
 </resources>

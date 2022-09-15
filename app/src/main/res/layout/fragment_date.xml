@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,8 +7,221 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/imp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        android:text="Important dates"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        />
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_below="@+id/imp">
+        <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imp"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"
+            android:layout_margin="40dp">
 
-</FrameLayout>
+                <TableRow
+                    android:background="@color/lightgrey">
+
+                    <TextView
+                        android:text="Final date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_column="1" />
+
+                    <TextClock
+                        android:text="Events"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="40dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:layout_column="2" />
+
+                </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+
+                android:background="@color/white">
+
+                <TextView
+                    android:text="1 September 2022"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_column="1" />
+
+                <TextClock
+                    android:text="Commencement of abstract submission"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_column="2" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+
+                android:background="@color/white">
+
+                <TextView
+                    android:text="20 September 2022"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_column="1" />
+
+                <TextClock
+                    android:text="Deadline of abstract submission"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_column="2" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/white">
+
+                <TextView
+                    android:text="30 September 2022"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_column="1" />
+
+                <TextClock
+                    android:text="Notification of Abstract Acceptance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_column="2" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+
+                android:background="@color/white">
+
+                <TextView
+                    android:text="30 October 2022"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_column="1" />
+
+                <TextClock
+                    android:text="Deadline for submission of full-length manuscript"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_column="2" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+
+                android:background="@color/white">
+
+                <TextView
+                    android:text="4 November 2022"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_column="1" />
+
+                <TextClock
+                    android:text="Commencement of Conference Registration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_column="2" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+
+                android:background="@color/white">
+
+                <TextView
+                    android:text="15 November 2022"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_column="1" />
+
+                <TextClock
+                    android:text="Deadline for early-bird\nRegistration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_column="2" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+
+                android:background="@color/white">
+
+                <TextView
+                    android:text="30 November 2022"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_column="1" />
+
+                <TextView
+                    android:text="Deadline for \nOnline Registration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_column="2" />
+
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</RelativeLayout>

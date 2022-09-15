@@ -20,9 +20,6 @@
         android:id="@+id/navac"
         android:title="International Advisory Committee"/>
     <item
-        android:id="@+id/navdate"
-        android:title="Important Dates"/>
-    <item
         android:id="@+id/navabstract"
         android:title="Abstract Submission"/>
     <item
