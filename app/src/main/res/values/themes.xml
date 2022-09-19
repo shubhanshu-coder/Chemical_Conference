@@ -1,6 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Conference" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.Conference" parent="Theme.MaterialComponents.Light.NoActionBar">
+
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/buttoncolor</item>
         <item name="colorPrimaryVariant">@color/sec</item>
@@ -26,4 +27,5 @@
         <item name="android:windowBackground">@drawable/background_splash</item>
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
     </style>
+
 </resources>

@@ -1,29 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:anddroid="http://schemas.android.com/apk/res-auto"
     tools:showIn="navigation_view">
     <group android:checkableBehavior="single">
 <item
     android:id="@+id/navhome"
-    android:title="Home"/>
-    <item
-        android:id="@+id/navabout"
-        android:title="About"/>
-    <item
-        android:id="@+id/navbrochure"
-        android:title="Conference Brochure"/>
+    android:title="Home"
+    android:checked="true"/>
+
+        <item
+            android:id="@+id/themes"
+            android:title="Major Themes"/>
+        <item
+            android:id="@+id/navabstract"
+            android:title="Abstract Submission"/>
+        <item
+            android:id="@+id/navcontact"
+            android:title="Contact"/>
+        <item android:title="Committees">
+            <menu>
+                <group android:checkableBehavior="single">
     <item
         android:id="@+id/navoc"
         android:title="Organising Committee"/>
     <item
         android:id="@+id/navac"
         android:title="International Advisory Committee"/>
-    <item
-        android:id="@+id/navabstract"
-        android:title="Abstract Submission"/>
-    <item
-        android:id="@+id/navcontact"
-        android:title="Contact"/>
+                </group>
+            </menu>
+        </item>
+        <item android:title="About">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/navabout"
+                        android:title="About the Conference"/>
+                    <item
+                        android:id="@+id/navab"
+                        android:title="About the Institute"/>
+                </group>
+            </menu>
+        </item>
+
+
     </group>
 </menu>

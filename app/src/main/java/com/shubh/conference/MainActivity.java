@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 drawerLayout.openDrawer(GravityCompat.START);
             }
         });
+        replacefragment(new HomeFragment());
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -46,13 +47,13 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.navabout:
                         replacefragment(new AboutFragment());
                         break;
-                    case R.id.navabstract:
+                    /*case R.id.navabstract:
                         replacefragment(new AbtractFragment());
-                        break;
+                        break;*/
                     case R.id.navac:
                         replacefragment(new ACFragment());
                         break;
-                    case R.id.navbrochure:
+                    case R.id.themes:
                         replacefragment(new BrochureFragment());
                         break;
                     case R.id.navoc:
@@ -60,6 +61,12 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.navcontact:
                         replacefragment(new ContactFragment());
+                        break;
+                    case R.id.navabstract:
+                        replacefragment(new AbtractFragment());
+                        break;
+                    case R.id.navab:
+                        replacefragment(new aboutdhn());
                         break;
                     default:
                         replacefragment(new HomeFragment());
@@ -76,7 +83,5 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.frameLayout,fragment);
         fragmentTransaction.commit();
-
-
     }
 }

@@ -5,21 +5,18 @@ import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
-import android.view.SurfaceControl;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link AbtractFragment#newInstance} factory method to
+ * Use the {@link aboutdhn#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class AbtractFragment extends Fragment {
+public class aboutdhn extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -30,7 +27,7 @@ public class AbtractFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public AbtractFragment() {
+    public aboutdhn() {
         // Required empty public constructor
     }
 
@@ -40,11 +37,11 @@ public class AbtractFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment AbtractFragment.
+     * @return A new instance of fragment aboutdhn.
      */
     // TODO: Rename and change types and number of parameters
-    public static AbtractFragment newInstance(String param1, String param2) {
-        AbtractFragment fragment = new AbtractFragment();
+    public static aboutdhn newInstance(String param1, String param2) {
+        aboutdhn fragment = new aboutdhn();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -65,43 +62,39 @@ public class AbtractFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view= inflater.inflate(R.layout.fragment_abtract, container, false);
-        Button temp = (Button) view.findViewById(R.id.asbtn1);
-        Button guide = (Button) view.findViewById(R.id.asbtn2);
-        Button as = (Button) view.findViewById(R.id.asbtn3);
-        temp.setOnClickListener(new View.OnClickListener() {
+        View view= inflater.inflate(R.layout.fragment_aboutdhn, container, false);
+        Button reach = (Button) view.findViewById(R.id.reach);
+        Button ism = (Button) view.findViewById(R.id.ism);
+        Button dep = (Button) view.findViewById(R.id.dep);
+        Button tourist= (Button) view.findViewById(R.id.tourist);
+        reach.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment fragment=new template();
-                FragmentManager fragmentManager= getActivity().getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.submit,fragment);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                Golink("https://people.iitism.ac.in/~N0ET-2022/files/Howtoreach.pdf");
             }
         });
-        guide.setOnClickListener(new View.OnClickListener() {
+        ism.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment fragment=new guidelines();
-                FragmentManager fragmentManager= getActivity().getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.submit,fragment);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                Golink("https://www.iitism.ac.in/iitismnew/");
             }
         });
-        as.setOnClickListener(new View.OnClickListener() {
+        dep.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                GoLink("https://docs.google.com/forms/d/e/1FAIpQLSeqCj5wF8WFi2jm-Advy81KahjNK5hACOHt8yt6b6R0kzI6cA/viewform");
+                Golink("https://www.iitism.ac.in/index.php/Departments/dept_chem");
+            }
+        });
+        tourist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Golink("https://dhanbad.nic.in/tourist-places/");
             }
         });
         return view;
     }
-    private void GoLink(String s){
+    private void Golink(String s){
         Uri uri=Uri.parse(s);
         startActivity(new Intent(Intent.ACTION_VIEW,uri));
     }
-
 }

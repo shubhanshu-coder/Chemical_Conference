@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "465387396278",
+    "firebase_url": "https://chemicalconference-e3ff5-default-rtdb.firebaseio.com",
+    "project_id": "chemicalconference-e3ff5",
+    "storage_bucket": "chemicalconference-e3ff5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:465387396278:android:5a21651c8515caeb891a17",
+        "android_client_info": {
+          "package_name": "com.shubh.conference"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "465387396278-0tqvkai4insc8rodde6cl7fksitvkf7l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO4eGbaXk9zV1tCOLd76R0wYI6zSdGXrM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "465387396278-0tqvkai4insc8rodde6cl7fksitvkf7l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

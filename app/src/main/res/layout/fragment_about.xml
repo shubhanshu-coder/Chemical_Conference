@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AboutFragment">
@@ -9,44 +10,66 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/night_factory"
-        android:alpha="1.0"
+        android:src="@drawable/chimneys"
+        android:alpha="0.5"
         android:scaleType="centerCrop"/>
     <TextView
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
         android:id="@+id/about"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:textStyle="bold"
-        android:textSize="30sp"
-        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="About the Conference"
-        android:textColor="@color/white"
-        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         />
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/about">
-    <TextView
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:id="@+id/potha"
-        android:layout_marginTop="15dp"
-        android:textStyle="bold"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp"
-        android:textSize="15sp"
-        android:text="“Net-zero emission” refers to achieving a balance between the anthropogenic GHG emission and its removal from the atmosphere.\n\n
+        android:layout_below="@+id/about"
+        android:layout_marginTop="10dp">
 
-Attaining net-zero emission for sustainable development requires innovations in technologies that decarbonize conventional resource use while controlling fresh emission of CO2 into the atmosphere. Without strong and targeted research and development initiatives in critical technology areas, achieving goal of the net-zero emission is impossible.\n\n
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-Technology innovations in the field of carbon capture, utilization and storage; direct CO2 capture from the atmosphere; use of low-carbon hydrogen or hydrogen-based fuels; use of bioenergy and other renewable energy sources; and large-scale energy storage systems are going to play a major role in achieving the goal.\n\n
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                >
 
-However, each field mentioned faces techno-economical challenges. Academia, public-sector and private-sector need to work together on planning policies and developing technology to achieve the goal by mid-century, limiting the global average surface temperature rise to 1.5 °C set by the Paris Agreement."
-        android:textColor="@color/white"
-        android:textAlignment="center"
-        />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="30dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/agr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:padding="7dp"
+                        android:text="“Net-zero emission” refers to achieving a balance between the anthropogenic GHG emission and its removal from the atmosphere.\n\nAttaining net-zero emission for sustainable development requires innovations in technologies that decarbonize conventional resource use while controlling fresh emission of CO2 into the atmosphere. Without strong and targeted research and development initiatives in critical technology areas, achieving goal of the net-zero emission is impossible.\n\nTechnology innovations in the field of carbon capture, utilization and storage; direct CO2 capture from the atmosphere; use of low-carbon hydrogen or hydrogen-based fuels; use of bioenergy  and other renewable energy sources; and large-scale energy storage systems are going to play a major role in achieving the goal.\n\nHowever, each field mentioned faces techno-economical challenges. Academia, public-sector and private-sector need to work together on planning policies and developing technology to achieve the goal by mid-century, limiting the global average surface temperature rise to 1.5 °C set by the Paris Agreement. "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="30dp"
+                        />
+
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
     </ScrollView>
 </RelativeLayout>

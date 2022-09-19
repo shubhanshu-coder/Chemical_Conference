@@ -8,16 +8,22 @@
         <entry key="..\:/MyApps/ChemicalConference/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1435" />
         <entry key="..\:/MyApps/ChemicalConference/app/src/main/res/drawable/round_btn.xml" value="0.2145" />
         <entry key="..\:/MyApps/ChemicalConference/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/MyApps/ChemicalConference/app/src/main/res/layout/fragment_a_c.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyApps/ChemicalConference/app/src/main/res/layout/fragment_a_c.xml" value="0.264" />
         <entry key="..\:/MyApps/ChemicalConference/app/src/main/res/layout/fragment_about.xml" value="0.2" />
-        <entry key="..\:/MyApps/ChemicalConference/app/src/main/res/layout/fragment_abtract.xml" value="0.25416666666666665" />
-        <entry key="..\:/MyApps/ChemicalConference/app/src/main/res/layout/fragment_brochure.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyApps/ChemicalConference/app/src/main/res/layout/fragment_aboutdhn.xml" value="0.2" />
+        <entry key="..\:/MyApps/ChemicalConference/app/src/main/res/layout/fragment_abtract.xml" value="0.4" />
+        <entry key="..\:/MyApps/ChemicalConference/app/src/main/res/layout/fragment_announcements.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyApps/ChemicalConference/app/src/main/res/layout/fragment_brochure.xml" value="0.264" />
+        <entry key="..\:/MyApps/ChemicalConference/app/src/main/res/layout/fragment_contact.xml" value="0.25416666666666665" />
         <entry key="..\:/MyApps/ChemicalConference/app/src/main/res/layout/fragment_date.xml" value="0.4" />
-        <entry key="..\:/MyApps/ChemicalConference/app/src/main/res/layout/fragment_home.xml" value="0.2" />
-        <entry key="..\:/MyApps/ChemicalConference/app/src/main/res/layout/fragment_o_c.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyApps/ChemicalConference/app/src/main/res/layout/fragment_guidelines.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyApps/ChemicalConference/app/src/main/res/layout/fragment_home.xml" value="0.264" />
+        <entry key="..\:/MyApps/ChemicalConference/app/src/main/res/layout/fragment_o_c.xml" value="0.1" />
         <entry key="..\:/MyApps/ChemicalConference/app/src/main/res/layout/fragment_our_sponsors.xml" value="0.25416666666666665" />
         <entry key="..\:/MyApps/ChemicalConference/app/src/main/res/layout/fragment_sponsorship.xml" value="0.25729166666666664" />
+        <entry key="..\:/MyApps/ChemicalConference/app/src/main/res/layout/fragment_template.xml" value="0.25416666666666665" />
         <entry key="..\:/MyApps/ChemicalConference/app/src/main/res/layout/nav_header.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyApps/ChemicalConference/app/src/main/res/layout/singlerow.xml" value="0.1" />
         <entry key="..\:/MyApps/ChemicalConference/app/src/main/res/menu/navigation_item.xml" value="0.4" />
         <entry key="..\:/Shubh/Android/conference/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Shubh/Android/conference/app/src/main/res/layout/fragment_a_c.xml" value="0.25416666666666665" />

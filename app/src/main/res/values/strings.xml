@@ -3,6 +3,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="col1">Final Date</string>
-    <string name="hyperlink"><a href="https://www.iitism.ac.in/index.php/Departments/dept_chem"> Department of Chemical Engineering\nIndian Institute of Technology(ISM) Dhanbad </a>
+    <string name="hyperlink"><a href="https://www.iitism.ac.in/index.php/Departments/dept_chem">Department of Chemical Engineering\nIndian Institute of Technology(ISM) Dhanbad </a>
     </string>
+    <string name="submission"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeqCj5wF8WFi2jm-Advy81KahjNK5hACOHt8yt6b6R0kzI6cA/viewform?usp=sf_link">Click here for abstract submission\n(Deadline 20 September 2022)</a></string>
 </resources>

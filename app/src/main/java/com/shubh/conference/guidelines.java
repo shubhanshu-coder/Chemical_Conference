@@ -12,10 +12,10 @@ import com.github.barteksc.pdfviewer.PDFView;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link BrochureFragment#newInstance} factory method to
+ * Use the {@link guidelines#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class BrochureFragment extends Fragment {
+public class guidelines extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class BrochureFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public BrochureFragment() {
+    public guidelines() {
         // Required empty public constructor
     }
 
@@ -36,11 +36,11 @@ public class BrochureFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment BrochureFragment.
+     * @return A new instance of fragment guidelines.
      */
     // TODO: Rename and change types and number of parameters
-    public static BrochureFragment newInstance(String param1, String param2) {
-        BrochureFragment fragment = new BrochureFragment();
+    public static guidelines newInstance(String param1, String param2) {
+        guidelines fragment = new guidelines();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,9 +61,9 @@ public class BrochureFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view= inflater.inflate(R.layout.fragment_brochure, container, false);
-        /*PDFView pdfView=view.findViewById(R.id.pdfview);
-        pdfView.fromAsset("SponsorshipChart.pdf").load();*/
-        return view;
+        View v= inflater.inflate(R.layout.fragment_guidelines, container, false);
+        PDFView pdfView=v.findViewById(R.id.pdf_guide);
+        pdfView.fromAsset("guide.pdf").load();
+        return v;
     }
 }

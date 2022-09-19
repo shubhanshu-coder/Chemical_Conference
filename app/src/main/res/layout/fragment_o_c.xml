@@ -1,14 +1,322 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".OCFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:src="@drawable/chimneys"
+        android:alpha="0.5"
+        android:scaleType="centerCrop"/>
+<TextView
+    android:id="@+id/org"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Organizing Committee"
+    android:textSize="25sp"
+    android:textColor="@color/black"
+    android:textStyle="bold"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/org"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                >
+
+               <RelativeLayout
+                   android:layout_marginTop="30dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginBottom="30dp"
+                   >
+
+                   <TextView
+                       android:id="@+id/oi"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentStart="true"
+                       android:layout_alignParentTop="true"
+                       android:layout_marginLeft="10dp"
+                       android:text="Our Inspiration"
+                       android:textColor="@color/black"
+                       android:textSize="20sp"
+                       android:textStyle="bold" />
+
+                   <TextView
+                       android:id="@+id/cp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Chief Patron"
+                       android:textStyle="bold"
+                       android:textColor="@color/black"
+                       android:textSize="16sp"
+                      android:layout_below="@+id/oi"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginTop="30dp"
+                       />
+
+
+                   <TextView
+                       android:id="@+id/pv"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Prof. Prem Vrat \nChairman, IIT (ISM) Dhanbad"
+                       android:textColor="@color/black"
+                       android:textSize="16sp"
+                       android:layout_below="@+id/cp"
+                       android:layout_marginLeft="10dp"
+                       />
+
+                   <TextView
+                       android:id="@+id/patron"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Patron"
+                       android:textStyle="bold"
+                       android:textColor="@color/black"
+                       android:textSize="16sp"
+                       android:layout_below="@+id/pv"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginTop="30dp"
+                       />
+
+
+                   <TextView
+                       android:id="@+id/rs"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Prof. Rajiv Shekhar \nDirector, IIT (ISM) Dhanbad "
+                       android:textColor="@color/black"
+                       android:textSize="16sp"
+                       android:layout_below="@+id/patron"
+                       android:layout_marginLeft="10dp"
+                       />
+
+                   <TextView
+                       android:id="@+id/chairman"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Chairman"
+                       android:textStyle="bold"
+                       android:textColor="@color/black"
+                       android:textSize="16sp"
+                       android:layout_below="@+id/rs"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginTop="30dp"
+                       />
+
+
+                   <TextView
+                       android:id="@+id/as"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Prof. Arunkumar Samanta \nHead, Chemical Engineering"
+                       android:textColor="@color/black"
+                       android:textSize="16sp"
+                       android:layout_below="@+id/chairman"
+                       android:layout_marginLeft="10dp"
+                       />
+
+
+
+               </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+
+                >
+
+                <RelativeLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="30dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/la"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="Local Advisory Committee"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="30dp"/>
+
+                    <TextView
+                        android:id="@+id/dk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prof. Dheeraj Kumar\n\n
+Dy. Director Deans and Associate\n\n
+Deans\n\n
+Heads of other Departments and Centers\n\n
+Prof. Biswajit Chowdhury\n\n
+Prof. Sandipan Das\n\n
+Prof. Tarun Kumar Naiya\n\n
+Prof. Barun Kumar Nandi\n\n
+Prof. Suresh Pandian Elumalai"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_below="@+id/la"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                >
+
+                <RelativeLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="30dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/cc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="Core Committee"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/convener"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Convener"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_below="@+id/cc"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/mnn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Prof. Mahendra N Nandanwar"
+                        android:textSize="16sp"
+                        android:layout_below="@+id/convener"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/coco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Co-convener"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_below="@+id/mnn"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/sd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prof. Soubhik Kumar Bhaumik \nProf. Suman Dutta "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_below="@+id/coco"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tresurer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Treasurer"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_below="@+id/sd"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/sm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prof. Sandip Mandal\nProf. Vineet Kumar\nProf. Aditya Kumar\nProf. Siddhartha Sengupta\nProf. Krishna Sandilya Durbha\n
+Prof. Suresh Kumar Yatirajula\n
+Prof. Lutukurthi D N V V Konda\n
+Prof. Paidinaidu Paluri\n
+Prof. Ejaz Ahmad\n
+Prof. Soumyajit Sengupta\n
+Prof. Pantula D Priyanka\n
+Prof. Sourav Sengupta\n
+Prof. Bidhan Chandra\n
+Prof. Apurba Sinhamahapatra"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_below="@+id/tresurer"
+                        android:layout_marginLeft="10dp"
+                        />
+
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>
